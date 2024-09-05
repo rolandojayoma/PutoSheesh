@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puto Cheese Recipe</title>
+    <style>
+        body {
+            background-image: url('image/puto.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1, h2 {
+            text-align: center;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        ul, ol {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        ul li, ol li {
+            margin: 10px 0;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        .carousel-container {
+            margin: 20px auto;
+            position: relative;
+            max-width: 400px; /* Reduced width */
+            height: 300px; /* Fixed height */
+        }
+
+        .carousel {
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            border-radius: 15px; /* Soft edges */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+        }
+
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease;
+            height: 100%;
+        }
+
+        .carousel-item {
+            min-width: 100%;
+            flex: 0 0 100%;
+            box-sizing: border-box;
+            height: 100%;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure images cover the area */
+            border-radius: 15px; /* Soft edges */
+        }
+
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carousel-nav button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .carousel-nav button:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+<h1>Seje's Puto Cheese Recipe</h1>
+
+<!-- Carousel for Different Kinds of Puto -->
+<div class="carousel-container">
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="image/ches.jpg" alt="Puto Cheese">
+            </div>
+            <div class="carousel-item">
+                <img src="image/ube.jpg" alt="Puto Ube">
+            </div>
+            <div class="carousel-item">
+                <img src="image/pandan.jpg" alt="Puto Pandan">
+            </div>
+        </div>
+        <div class="carousel-nav">
+            <button onclick="prevSlide()">❮</button>
+            <button onclick="nextSlide()">❯</button>
+        </div>
+    </div>
+</div>
+
+<h2>Ingredients:</h2>
+<ul>
+    <li>1 cup (120g) all-purpose flour</li>
+    <li>1 cup (200g) granulated sugar</li>
+    <li>1 cup (150g) grated cheese (e.g., cheddar or Edam)</li>
+    <li>1/2 cup (120ml) evaporated milk</li>
+    <li>1/2 cup (120ml) water</li>
+    <li>2 teaspoons baking powder</li>
+    <li>1/4 cup (60g) butter, melted</li>
+    <li>1 egg</li>
+    <li>Pinch of salt</li>
+</ul>
+
+<h2>Instructions:</h2>
+<ol>
+    <li>Preheat your steamer. Grease the molds lightly with butter or oil to prevent sticking.</li>
+    <li>In a mixing bowl, combine flour, sugar, grated cheese, baking powder, and salt. Mix well.</li>
+    <li>In another bowl, whisk together evaporated milk, water, melted butter, and egg.</li>
+    <li>Pour the wet ingredients into the dry ingredients. Mix until well combined and smooth.</li>
+    <li>Fill each mold with the batter until about 3/4 full.</li>
+    <li>Place the filled molds in the steamer. Steam for about 10-15 minutes or until a toothpick inserted into the center comes out clean.</li>
+    <li>Once cooked, remove from the steamer and let cool for a few minutes.</li>
+    <li>Serve warm and enjoy your delicious Puto Cheese!</li>
+</ol>
+
+<!-- Link to JavaScript file -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
